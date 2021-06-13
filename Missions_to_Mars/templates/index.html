@@ -17,14 +17,99 @@
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
 
-
     <!-- Mars Listings -->
-    <div class="row" id="phone-listings">
+    <div class="row" id="mars-news">
       <div class="col-md-12">
+        <h2><strong>Latest Mars News</h2></strong>
         <h3 class="heading"><strong>{{mars.headlines}}</strong></h3>
         <h4 class="heading">{{mars.article}}</h4>
         <small>{{mars.date}}</small>
-        
+    </div>
+
+    <!-- Mars Images -->
+    <div class="row">
+      <div class="col-md-5">
+        <h2><strong>Featured Mars Image</h2></strong>
+        <img height = 350 width = 550 src="https://spaceimages-mars.com/image/mars/Ariadnes Colles4.jpg"
+        class="d-block w-100" alt="...">
+        <h3 class="heading"><strong>{{image_list}}</strong></h3>
+      </div>
+
+      <div class="col-md-1">
+      </div>
+
+      <div class="col-md-6">
+        <h2><strong>Mars Facts</h2></strong>
+        <table border="1" class="dataframe">
+          <table class="table table-bordered border-primary">
+          <span class="border border-dark"></span>
+          <thead>
+            <tr style="text-align: right;">
+              <th></th>
+              <th>Characteristics</th>
+              <th>Values</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0</th>
+              <td>Equatorial Diameter:</td>
+              <td>6,792 km</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Polar Diameter:</td>
+              <td>6,752 km</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Mass:</td>
+              <td>6.39 x 10^23 kg (0.11 Earths)</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Moons:</td>
+              <td>2 ( Phobos &amp; Deimos )</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>Orbit Distance:</td>
+              <td>227,943,824 km (1.38 AU)</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>Orbit Period:</td>
+              <td>687 days (1.9 years)</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td>Surface Temperature:</td>
+              <td>-87 to -5 °C</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td>First Record:</td>
+              <td>2nd millennium BC</td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td>Recorded By:</td>
+              <td>Egyptian astronomers</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-12">
+        <div class="Panel-body">
+          <H2 style="text-align: center;"><strong>Mars Hemispheres</H2></strong>
+          <hr>
+          <br>
+        <div class="row">
+          <div class="ccol-sm-12 col-md-4 col-lg-3"><a href="marshemispheres.com/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg"><img class="img img-responsive" src="Images/cerberus_enhanced.tif_full" style="width:100%" alt="Cerberus Hemisphere Enhanced"></a></div>
+          <div class="ccol-sm-12 col-md-4 col-lg-3"><a href="https://marshemispheres.com/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg"><img class="img img-responsive" src="Images/schiaparelli_enhanced.tif_full" style="width:100%" alt="Chiaparelli Hemisphere Enhanced"></a></div>
+          <div class="col-sm-12 col-md-4 col-lg-3"><a href="https://marshemispheres.com/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg"><img class="img img-responsive" src="Images/syrtis_major_enhanced.tif_full" style="width:100%" alt="Syrtis Major Hemisphere Enhanced'"></a></div>
+          <div class="col-sm-12 col-md-4 col-lg-3"><a href="https://marshemispheres.com/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg"><img class="img img-responsive" src="Images/valles_marineris_enhanced.tif_full" style="width:100%" alt="Valles Marineris Hemisphere Enhanced"></a></div>
+        </div>
       </div>
     </div>
 
